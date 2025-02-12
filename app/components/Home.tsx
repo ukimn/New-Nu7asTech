@@ -28,7 +28,7 @@ export default function Home() {
         <motion.h1 variants={itemsVariants} className="text-4xl">
           Hello, We{"'"}re
           <br />
-          <span className="text-[#55c996] tracking-widest leading-10 mx-4 uppercase">
+          <span className="text-primary tracking-widest leading-10 mx-4 uppercase">
             Nu7as Tech
           </span>
         </motion.h1>
@@ -44,7 +44,7 @@ export default function Home() {
           ))}
           <Link
             href="/About"
-            className="rounded-lg border-[#55c996] border-[1px] duration-300 hover:bg-[#55c996] transition-colors p-2 mx-3 cursor-pointer flex items-center"
+            className="rounded-lg border-primary border-[1px] duration-300 hover:bg-[#48b081] transition-colors p-2 mx-3 cursor-pointer flex items-center"
           >
             Learn More
           </Link>

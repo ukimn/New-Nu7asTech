@@ -34,12 +34,12 @@ const AboutPage = () => {
       animate="visible"
     >
       <motion.h1 className="text-4xl mb-4" variants={itemsVariants}>
-        About <span className="text-[#55c996]">Nu7as Tech</span>
+        About <span className="text-primary">Nu7as Tech</span>
       </motion.h1>
-      <motion.hr variants={itemsVariants} className="h-[2px] w-[400px] bg-[#55c996] mb-5"/>
+      <motion.hr variants={itemsVariants} className="h-[2px] w-[400px] bg-primary mb-5"/>
       <motion.div variants={itemsVariants} className="flex items-end w-[700px]">
         <motion.p variants={itemsVariants} className="text-2xl mt-5 mb-6 leading-loose">
-          <span className="text-[#55c996]">Nu7as Tech </span> 
+          <span className="text-primary">Nu7as Tech </span> 
           is a skilled web development team with two years of
           experience, mastering 11 cutting-edge technologies to deliver
           high-quality digital solutions. With a team of six dedicated
@@ -48,8 +48,8 @@ const AboutPage = () => {
           ensures innovative and scalable projects that meet industry standards.
         </motion.p>
       </motion.div>
-      <motion.h1 className="text-4xl mb-4">Skills <span className="text-[#55c996]">& Abilities</span></motion.h1>
-      <motion.hr variants={itemsVariants} className={`h-[2px] w-[400px] bg-[#55c996] mb-5`}/>
+      <motion.h1 className="text-4xl mb-4">Skills <span className="text-primary">& Abilities</span></motion.h1>
+      <motion.hr variants={itemsVariants} className={`h-[2px] w-[400px] bg-primary mb-5`}/>
       <motion.div className="grid grid-cols-2 items-center justify-evenly">
         <motion.div ref={containerRef} animate={mainControls} initial="hidden" variants={{
           hidden: {opacity: 0, y: 75},
