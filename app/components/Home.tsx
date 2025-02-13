@@ -10,9 +10,9 @@ import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
 
 export default function Home() {
   const IconsImg = [
-    { id: 1, icon: <FaInstagram /> },
-    { id: 2, icon: <FaGithub /> },
-    { id: 3, icon: <FaDiscord /> },
+    { id: 1, icon: <FaInstagram />, ref:"https://www.instagram.com/n7.tech/" },
+    { id: 2, icon: <FaGithub />, ref: ""},
+    { id: 3, icon: <FaDiscord />, ref: "" },
   ];
 
   return (
@@ -44,7 +44,7 @@ export default function Home() {
           className="flex flex-wrap justify-center md:justify-start my-5 py-3"
         >
           {IconsImg.map((item) => (
-            <Icons icons={item.icon} key={item.id} />
+            <Icons icons={item.icon} key={item.id} ref={item.ref}/>
           ))}
           <Link
             href="/About"

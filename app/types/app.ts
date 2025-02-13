@@ -19,7 +19,8 @@ export interface Props{
 }
 
 export interface IconsProps{
-    icons: React.ReactElement<SVGElement>
+    icons: React.ReactElement<SVGElement>;
+    ref: string;
 }
 
 export interface HomeSkillsProps {
