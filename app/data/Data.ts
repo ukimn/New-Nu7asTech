@@ -64,7 +64,6 @@ export const HomeSkillsList = [
   { number: 2, children: "Years of Experience" },
   { number: 8, children: "Projects Completed" },
   { number: 11, children: "Technologies Mastered" },
-  { number: 6, children: "Team Members" },
 ];
 
 
