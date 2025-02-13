@@ -26,3 +26,9 @@ export interface HomeSkillsProps {
     number: number;
     children: React.ReactNode;
 }
+
+export interface RouterTypes{
+    id: number;
+    title: string;
+    ref: string;
+}

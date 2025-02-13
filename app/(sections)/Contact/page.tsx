@@ -41,6 +41,7 @@ export default function ContactUs() {
         () => {
           setSent("Your message has been sent! THANK YOU!");
           setLoading(false);
+          form.current?.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -52,7 +53,7 @@ export default function ContactUs() {
   return (
     <motion.div
       variants={containerVariants}
-      className="flex items-center justify-center min-h-screen w-full"
+      className="flex items-center justify-center min-h-screen w-full px-4"
     >
       <motion.div
         variants={containerVariants}
@@ -77,7 +78,7 @@ export default function ContactUs() {
         >
           <motion.div
             variants={itemsVariants}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
           >
             <motion.input
               className="w-full px-4 py-3 border border-gray-300 rounded-lg 
@@ -91,9 +92,7 @@ export default function ContactUs() {
               required
             />
             <motion.input
-              className={`w-full px-4 py-3 border ${
-                emailError ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+              className={`w-full px-4 py-3 border ${emailError ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
               focus:border-blue-500 transition duration-300 ease-in-out 
               transform focus:scale-105`}
               variants={itemsVariants}
@@ -125,9 +124,7 @@ export default function ContactUs() {
           <motion.button
             className={`w-full px-4 py-3 bg-primary text-white font-semibold 
             rounded-lg transition duration-300 ease-in-out 
-            transform hover:scale-105 ${
-              loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
-            }`}
+            transform hover:scale-105 ${loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
             variants={itemsVariants}
             type="submit"
             disabled={loading}

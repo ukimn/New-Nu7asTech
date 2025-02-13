@@ -1,3 +1,4 @@
+import { RouterTypes } from "../types/app"
 
 
 export const PricingCards = [
@@ -66,3 +67,12 @@ export const HomeSkillsList = [
   { number: 6, children: "Team Members" },
 ];
 
+
+
+
+export const routers: RouterTypes[] = [
+    {id: 1, title: "Home", ref:"/"},
+    {id: 2, title: "About", ref:"/About"},
+    {id: 3, title: "Pricing", ref:"/Pricing"},
+    {id: 4, title: "Contact", ref:"/Contact"},
+]

@@ -5,8 +5,9 @@ import Icons from "./Icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { itemsVariants, containerVariants } from "../animations/variants";
-import { HomeSkillsList } from "../data/dataCards";
+import { HomeSkillsList } from "../data/Data";
 import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
+
 export default function Home() {
   const IconsImg = [
     { id: 1, icon: <FaInstagram /> },
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <motion.div
-      className="flex justify-between my-14 items-center max-w-[800px] mx-auto"
+      className="flex flex-col md:flex-row justify-between my-14 items-center max-w-[800px] mx-auto px-4 text-center md:text-left"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -38,7 +39,10 @@ export default function Home() {
           <br /> customized digital solutions tailored to our clients{"'"}{" "}
           unique needs.
         </motion.p>
-        <motion.div variants={itemsVariants} className="flex my-5 py-3">
+        <motion.div
+          variants={itemsVariants}
+          className="flex flex-wrap justify-center md:justify-start my-5 py-3"
+        >
           {IconsImg.map((item) => (
             <Icons icons={item.icon} key={item.id} />
           ))}
@@ -49,7 +53,10 @@ export default function Home() {
             Learn More
           </Link>
         </motion.div>
-        <motion.div variants={itemsVariants} className="mt-9 flex">
+        <motion.div
+          variants={itemsVariants}
+          className="mt-9 flex flex-wrap justify-center md:justify-start"
+        >
           {HomeSkillsList.map((item) => (
             <HomeSkills number={item.number} key={item.number}>
               {item.children}
