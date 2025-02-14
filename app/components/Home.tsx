@@ -58,12 +58,6 @@ export default function Home() {
             {IconsImg.map((item) => (
               <Icons icons={item.icon} key={item.id} ref={item.ref} />
             ))}
-            <Link
-              href="/About"
-              className="rounded-lg border-primary border-[1px] duration-300 hover:bg-[#48b081] transition-colors p-2 mx-3 cursor-pointer flex items-center text-sm md:text-base"
-            >
-              Learn More
-            </Link>
           </motion.div>
           <motion.div
             variants={itemsVariants}
