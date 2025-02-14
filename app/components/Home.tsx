@@ -7,7 +7,7 @@ import Link from "next/link";
 import { itemsVariants, containerVariants } from "../animations/variants";
 import { HomeSkillsList } from "../data/Data";
 import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
-import Nu7asTech from "../../public/Nu7asTech.png";
+import Nu7asTech from "../../public/Nu7astech.png";
 import Image from "next/image";
 
 export default function Home() {

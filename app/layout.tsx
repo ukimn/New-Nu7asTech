@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Nu7as Tech | Innovating the Future of Web",
   description: "Stay ahead in technology, web development, and AI. Explore cutting-edge trends, coding tutorials, and expert insights to shape the future.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
   icons: {
     icon: "/Nu7astech.png", // Correct path for Next.js public assets
   }
-} satisfies Metadata;
+}
 
 
 
