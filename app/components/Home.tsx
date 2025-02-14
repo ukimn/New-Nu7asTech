@@ -3,7 +3,6 @@
 import HomeSkills from "./HomeSkills";
 import Icons from "./Icons";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { itemsVariants, containerVariants } from "../animations/variants";
 import { HomeSkillsList } from "../data/Data";
 import { FaInstagram, FaGithub, FaDiscord } from "react-icons/fa";
