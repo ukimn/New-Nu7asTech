@@ -18,9 +18,9 @@ export default function Home() {
   ];
 
   return (
-    <motion.div className="flex items-center justify-center w-[1000px] mx-auto">
+    <motion.div className="flex items-center justify-center w-full px-4 sm:px-6 lg:px-8">
       <motion.div
-        className="flex flex-col md:flex-row justify-between items-center my-14 max-w-[1200px] mx-auto px-4 text-center md:text-left"
+        className="flex flex-col md:flex-row justify-between items-center my-14 max-w-[1200px] mx-auto text-center md:text-left"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

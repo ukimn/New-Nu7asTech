@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Nu7as Tech | Innovating the Future of Web & AI",
+  title: "Nu7as Tech | Innovating the Future of Web",
   description: "Stay ahead in technology, web development, and AI. Explore cutting-edge trends, coding tutorials, and expert insights to shape the future.",
   keywords: [
     "Technology",

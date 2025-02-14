@@ -14,7 +14,7 @@ function NotFound() {
       {/* Go Back Button */}
       <Link 
         href="/" 
-        className="text-lg sm:text-xl border border-[#55c996] bg-[#55c996] text-white px-6 py-3 rounded-lg duration-200 transition-colors hover:bg-[#48b081] hover:shadow-md"
+        className="text-lg sm:text-xl border  border-[#55c996] bg-[#55c996] text-white px-6 py-3 rounded-lg duration-200 transition-colors hover:bg-[#48b081] hover:shadow-md"
         aria-label="Go back to homepage"
       >
         Go Back
