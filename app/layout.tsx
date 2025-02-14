@@ -13,10 +13,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Nu7as Tech",
-  description: "The Gate of the future",
-};
+export const metadata = {
+  title: "Nu7as Tech | Innovating the Future of Web & AI",
+  description: "Stay ahead in technology, web development, and AI. Explore cutting-edge trends, coding tutorials, and expert insights to shape the future.",
+  keywords: [
+    "Technology",
+    "Web Development",
+    "Programming",
+    "Software Development",
+    "AI & Machine Learning",
+    "Tech News",
+    "Coding Tutorials",
+    "Web Design",
+    "Future of Technology"
+  ]
+} satisfies Metadata;
+
+
 
 export default function RootLayout({
   children,
