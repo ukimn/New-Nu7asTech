@@ -20,6 +20,7 @@ export const Navbar = () => {
       <button
         className="md:hidden focus:outline-none relative w-6 h-5"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label={`${isMenuOpen ? "menu" : "navigation"}-menu`}
       >
         <span
           className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${
