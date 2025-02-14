@@ -26,8 +26,12 @@ export const metadata = {
     "Coding Tutorials",
     "Web Design",
     "Future of Technology"
-  ]
+  ],
+  icons: {
+    icon: "/Nu7astech.png", // Correct path for Next.js public assets
+  }
 } satisfies Metadata;
+
 
 
 
