@@ -33,3 +33,8 @@ export interface RouterTypes{
     title: string;
     ref: string;
 }
+
+export interface AuthButtonsProps{
+    app: string;
+    order: string;
+}

@@ -4,6 +4,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { ParentSkillsCards } from "@/app/components/ParentSkillsCards";
 import { useEffect, useRef } from "react";
 import { itemsVariants, containerVariants } from "@/app/animations/variants";
+import Link from "next/link";
 import { FrontEndskills, DesignSkills } from "@/app/data/Data";
 
 const AboutPage = () => {
@@ -52,6 +53,8 @@ const AboutPage = () => {
           in building modern, responsive, and efficient web applications
           tailored to clients{"'"} needs. Their expertise ensures innovative and
           scalable projects that meet industry standards.
+          <br/>
+          <Link href={"/About/FAQ"} className="button mt-5">SEE FAQ{"'"}s</Link>
         </motion.p>
       </motion.div>
       <motion.h1 className="text-4xl mb-4">

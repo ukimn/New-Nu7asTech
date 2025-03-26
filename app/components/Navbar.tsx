@@ -14,9 +14,9 @@ export const Navbar = () => {
   return (
     <header className="flex justify-around w-full items-center py-9 relative">
       <Link href="/" className="text-2xl font-medium">
-        Nu7as Tech <div className="bg-primary w-[5px] h-[5px] inline-block"></div>
+        Nu7as Tech{" "}
+        <div className="bg-primary w-[5px] h-[5px] inline-block"></div>
       </Link>
-
       <button
         className="md:hidden focus:outline-none relative w-6 h-5"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -38,8 +38,6 @@ export const Navbar = () => {
           }`}
         ></span>
       </button>
-
-
       <nav className={`md:block ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="list-none flex gap-3 md:flex-row flex-col md:items-center md:static absolute top-full left-0 right-0 bg-[#1a191d] z-50- md:bg-transparent md:shadow-none shadow-lg p-4">
           {routers.map((router) => (
@@ -51,13 +49,13 @@ export const Navbar = () => {
                   ? "text-primary border-b-2 border-primary pb-1"
                   : ""
               }`}
-              onClick={handleLinkClick} 
+              onClick={handleLinkClick}
             >
               {router.title}
             </Link>
           ))}
         </ul>
-      </nav>
+      </nav>{" "}
     </header>
   );
 };

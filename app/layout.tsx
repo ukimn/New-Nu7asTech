@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Navbar } from './components/Navbar'
+import { Navbar } from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nu7as Tech | Innovating the Future of Web",
-  description: "Stay ahead in technology, web development, and AI. Explore cutting-edge trends, coding tutorials, and expert insights to shape the future.",
+  description:
+    "Stay ahead in technology, web development, and AI. Explore cutting-edge trends, coding tutorials, and expert insights to shape the future.",
   keywords: [
     "Technology",
     "Web Development",
@@ -25,15 +27,12 @@ export const metadata: Metadata = {
     "Tech News",
     "Coding Tutorials",
     "Web Design",
-    "Future of Technology"
+    "Future of Technology",
   ],
   icons: {
     icon: "/Nu7astech.png", // Correct path for Next.js public assets
-  }
-}
-
-
-
+  },
+};
 
 export default function RootLayout({
   children,
@@ -45,8 +44,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        {children}
+          <Navbar />
+          {children}
+          <Toaster/>
       </body>
     </html>
   );

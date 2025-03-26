@@ -75,3 +75,9 @@ export const routers: RouterTypes[] = [
     {id: 3, title: "Pricing", ref:"/Pricing"},
     {id: 4, title: "Contact", ref:"/Contact"},
 ]
+
+export const Questions = [
+  {id: 1, summary: "What is Nu7as-tech?", answer: "Nu7as-tech is a tech team specializing in web development"},
+  {id: 2, summary: "What can Nu7as-tech do?", answer: "Nu7as-tech can do anything you want!"},
+  {id: 3, summary: "Why is there no a pricing page?", answer: "We're working on improving our performance"}
+]
